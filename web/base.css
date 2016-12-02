@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#page{
+    position: relative;
+    text-align: justify;
+}
+
+#main-content img{ width:100%; }
+#main-content section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#main-content section:first-child{
+    padding-top: 0;
+}
+#main-content h2, #main-content h3, #main-content p{
+    margin: 0 10px 10px 10px;
+}
+
+
+
+h1{
+    display:inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+#lang-selector{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#lang-selector ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#lang-selector li{
+    display:inline-block;
+}
+
+#nav-sections{
+    position: absolute;
+    margin-left: auto;
+margin-right: auto;
+    top: 37px;
+    left: 100px;
+    right: 8px;
+}
+#nav-sections ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: justify;
+}
+#nav-sections ul:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav-sections ul:before{
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+#nav-sections ul li{
+    display: inline-block;
+    margin-right: -.25em;
+    position: relative;
+    top: 1.25em;
+}
+
+#activitées{
+    background-color: gray;
+}
+
+#forfaits{
+    background-color: #3399CC;
+}

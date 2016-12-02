@@ -1,0 +1,27 @@
+{% extends 'one-pager.html.twig' %}
+ 
+    {% block header %}
+        <section id="marque">
+            <header>
+                    {{ include('headers/base.html.twig') }}
+            </header>
+        
+            {{ include('navigations/main.html.twig') }}
+        </section>
+    {% endblock %}
+
+{% block sections %}
+    <div id="main-content">
+        {{ include('branding/base.html.twig') }}
+        
+        {{ include('activities/base.html.twig') }}            
+        
+        {{ include('packages/base.html.twig') }} 
+        
+        {{ include('contact/base.html.twig') }} 
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include('footer/base.html.twig') }} 
+{% endblock %}

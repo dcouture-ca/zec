@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ htmlHead.getLang() }}" >
+    <head prefix="og: http://ogp.me/ns#">
+        
+        <title>{{ htmlHead.getTitle() }}</title>
+        <meta name="author" content="{{ htmlHead.getAuthor() }}">
+        <meta name="description" content="{{ htmlHead.getDescription() }}">
+        <meta name="theme-color" content="{{ htmlHead.getThemeColor() }}"> 
+        {{ htmlHead.getFaviconLink|raw }}
+
+        <link rel="stylesheet" type="text/css" href="base.css">
+        <link rel="amphtml" href="https://amp.dcouture.ca">
+
+        <meta property="og:url" content="https://dcouture.ca" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Titre de la page (max 65)" />
+        <meta property="og:description" content="Description de la page" />
+        <meta property="og:image" content="http:zec.com/shareimage.jpg" /> {# au moins 1200 x 630 pixels min 600 x 315 #}
+
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+        <meta name="robots" content="noindex,follow">
+    </head>
+    <body>
+        <div id="page">
+            {% block header %}Header{% endblock %}
+
+            {% block sections %}Lists of sections{% endblock %}     
+            
+            {% block footer %}Footers{% endblock %}
+        </div>
+    </body>
+</html>
